@@ -139,7 +139,7 @@ export default function App() {
                 </span>
                 <input
                   type="file"
-                  accept=".csv,.xlsx,.xls"
+                  accept=".xlsx,.xls"
                   onChange={handleFileChange}
                   className="hidden"
                 />
