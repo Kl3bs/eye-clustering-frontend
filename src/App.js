@@ -24,6 +24,7 @@ import {
   AlertCircle,
   CheckCircle,
 } from "lucide-react";
+import { LAST_RESULT } from "./results";
 
 export default function App() {
   const [file, setFile] = useState(null);
@@ -72,6 +73,11 @@ export default function App() {
     } finally {
       setLoading(false);
     }
+  };
+
+  const setLastResult = () => {
+    const lastResult = LAST_RESULT;
+    setResult(lastResult);
   };
 
   const COLORS = ["#3b82f6", "#10b981", "#f59e0b"];
@@ -159,6 +165,15 @@ export default function App() {
             >
               {loading ? "Analisando..." : "Analisar Dados"}
             </button>
+
+            {
+              <button
+                onClick={setLastResult}
+                className="mt-3 w-full bg-teal-600 text-white py-3 rounded-lg font-semibold hover:bg-teal-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+              >
+                {"Acessar último resultado"}
+              </button>
+            }
           </div>
 
           {error && (
