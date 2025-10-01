@@ -293,17 +293,17 @@ export default function App() {
                     ))}
                   </div>
 
-                  {cluster.correct_frequency !== null && (
-                    <div className="mt-4 p-4 bg-blue-50 rounded-lg">
-                      <p className="text-sm text-gray-600">
-                        <span className="font-semibold">
-                          Informação Complementar:
-                        </span>{" "}
-                        Taxa de acurácia neste grupo:{" "}
-                        {cluster.correct_frequency}%
-                      </p>
-                    </div>
-                  )}
+                  // {cluster.correct_frequency !== null && (
+                  //   <div className="mt-4 p-4 bg-blue-50 rounded-lg">
+                  //     <p className="text-sm text-gray-600">
+                  //       <span className="font-semibold">
+                  //         Informação Complementar:
+                  //       </span>{" "}
+                  //       Taxa de acurácia neste grupo:{" "}
+                  //       {cluster.correct_frequency}%
+                  //     </p>
+                  //   </div>
+                  // )}
 
                   <div
                     className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4"
